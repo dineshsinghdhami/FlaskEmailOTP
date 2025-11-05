@@ -106,15 +106,13 @@ pip install -r requirements.txt
 
 ## 🤝 Contributing
 
-Pull requests are welcome!  
-Improve features, fix bugs, or enhance the UI.
+- Pull requests are welcome!  
+- Improve features, fix bugs, or enhance the UI.
 
 ---
 
 ## ©️ Copyright
 
-© 2025 Dinesh Singh Dhami — All Rights Reserved.
-
-This project is licensed for personal and educational use.
-
-For commercial use or redistribution, please contact the owner.
+- © 2025 Dinesh Singh Dhami — All Rights Reserved.
+- This project is licensed for personal and educational use.
+- For commercial use or redistribution, please contact the owner.
