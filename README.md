@@ -35,7 +35,7 @@ flask_email_otp/
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/your-username/flaskemailotp.git
+git clone https://github.com/dineshsinghdhami/flaskemailotp.git
 cd flaskemailotp
 ```
 
@@ -57,8 +57,8 @@ Edit `app.py` and configure the email settings:
 ```python
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'your-email@gmail.com'
-app.config['MAIL_PASSWORD'] = 'your-email-password-or-app-password'
+app.config['MAIL_USERNAME'] = 'dummy-email@gmail.com'
+app.config['MAIL_PASSWORD'] = 'dummy-email-password-or-app-password'
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
 ```
@@ -111,6 +111,10 @@ Improve features, fix bugs, or enhance the UI.
 
 ---
 
-## 📜 License
+## ©️ Copyright
 
-This project is licensed under the **MIT License** – see the [LICENSE](LICENSE.md) file for details.
+© 2025 Dinesh Singh Dhami — All Rights Reserved.
+
+This project is licensed for personal and educational use.
+
+For commercial use or redistribution, please contact the owner.
