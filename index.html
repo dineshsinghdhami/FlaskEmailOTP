@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dinesh Singh Dhami | Portfolio</title>
+    <link rel="icon" href="files/icon.png" type="image/png">
+    <link rel="icon" href="files/icon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="files/icon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="files/icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="files/icon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="files/icon-16x16.png">
+    <meta name="msapplication-TileImage" content="files/icon.png">
+    <meta name="msapplication-TileColor" content="#1e3a8a">
+    <meta name="theme-color" content="#1e3a8a">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    
+           
+</head>
+<body class="bg-gray-50">
+
+
+    <nav class="fixed top-0 w-full navbar-blur z-40">
+        <div class="w-full px-8 lg:px-12">
+            <div class="flex justify-between items-center py-4">
+
+              
+                <div class="flex items-center">
+                    <img src="files/icon.ico" alt="Profile" class="profile-image cursor-pointer hover:scale-110 transition-transform shadow-lg" id="profile-trigger">
+                </div>
+
+        
+                <div class="hidden md:flex space-x-10">
+                    <a href="#home" class="text-link">HOME</a>
+                    <a href="#about" class="text-link">ABOUT</a>
+                    <a href="#projects" class="text-link">PROJECTS</a>
+                    <a href="#certifications" class="text-link">CERTIFICATIONS</a>
+                    <a href="#skills" class="text-link">SKILLS</a>
+                  
+                    <a href="#contact" class="text-link">CONTACT</a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+
+            </div>
+        </div>
+
+        <div id="mobile-menu" class="hidden md:hidden bg-blue-900/95 backdrop-blur-md border-t border-white/10">
+            <div class="px-4 py-3 space-y-3">
+                <a href="#home" class="block text-link py-2">HOME</a>
+                <a href="#about" class="block text-link py-2">ABOUT</a>
+                <a href="#projects" class="block text-link py-2">PROJECTS</a>
+                <a href="#certifications" class="block text-link py-2">CERTIFICATIONS</a>
+                <a href="#skills" class="block text-link py-2">SKILLS</a>
+                
+                <a href="#contact" class="block text-link py-2">CONTACT</a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="profile-popup" id="profile-popup">
+        <div class="profile-content">
+            <button class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 text-3xl font-light" id="close-profile">&times;</button>
+            
+            <div class="text-center mb-8">
+                <img src="files/unnamed-300x300.jpg" alt="Profile" class="profile-popup-image mx-auto mb-4 shadow-xl">
+                <h3 class="text-2xl font-bold text-gray-800">DINESH SINGH DHAMI </h3>
+                <p class="text-blue-600 font-semibold">Coding Newbie</p>
+            </div>
+
+            <div class="space-y-4 text-sm">
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">📧</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Email</p>
+                        <p class="text-gray-600">dineshdhamidn@gmail.com</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">📱</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Phone</p>
+                        <p class="text-gray-600">+977 9866109958</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">📍</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Location</p>
+                        <p class="text-gray-600">Dhangahi, Nepal</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">🎂</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Age</p>
+                        <p class="text-gray-600">23 years old</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">💼</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Experience</p>
+                        <p class="text-gray-600">Learning Phase</p>
+                    </div>
+                </div>
+                <div class="flex items-center space-x-3 p-3 bg-gray-50 rounded-lg">
+                    <span class="text-2xl">🎓</span>
+                    <div>
+                        <p class="font-semibold text-gray-800">Education</p>
+                        <p class="text-gray-600">Computer Engineering @NAST</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+<section id="home" class="home-bg min-h-screen flex items-center justify-center">
+    <div class="w-full px-8 lg:px-12 py-20">
+        <div class="grid lg:grid-cols-2 gap-8 items-center">
+            
+          
+            <div class="text-center lg:text-left text-gray-800 lg:order-1 lg:pr-8">
+                
+          
+                <div class="mb-4 fade-in">
+                    <h3 id="date-time" class="text-xl sm:text-2xl font-semibold text-black-700"></h3>
+                </div>
+
+        
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 fade-in">DINESH SINGH DHAMI </h1>
+             <p class="text-xl sm:text-2xl mb-4 text-gray-600 fade-in flex items-center justify-center lg:justify-start">
+    - Coding Newbie </p>
+                
+          
+                <div class="text-lg mb-8 text-gray-800 fade-in text-justify leading-relaxed">
+                    <p class="mb-4">
+                         Hi there! I'm Dinesh Singh Dhami, a passionate Computer Engineering student pursuing my Bachelor's degree at the National Academy of Science and Technology (NAST). Hailing from Darchula and currently residing in Dhangadhi, Nepal, I'm driven by curiosity about how technology works and a desire to create digital solutions that make a difference. My journey began with simple questions about how websites function, evolving into a deep passion for software development, problem-solving, and creating innovative solutions.
+                        Currently in my final year, I'm actively developing my software skills through practical projects, embracing continuous improvement in the fast-evolving tech landscape.</p>
+                </div>
+                
+                
+     
+<div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start fade-in mb-8">
+    <a href="#projects" class="modern-btn text-white px-8 py-4 rounded-full font-semibold transition-all bg-blue-600 hover:bg-blue-700">View My Projects</a>
+    <button onclick="openResumePDF()" class="border-2 border-gray-800 text-gray-800 px-8 py-4 rounded-full font-semibold hover:bg-gray-800 hover:text-white transition-all">
+        View My Resume
+    </button>
+</div>
+
+
+<div id="resume-pdf-modal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden z-50 p-4">
+    <div class="relative max-w-4xl w-full max-h-[90vh]">
+        <button onclick="closeResumePDF()" class="absolute -top-10 right-0 text-white text-2xl font-light w-8 h-8 flex items-center justify-center hover:text-gray-300">&times;</button>
+        <div class="bg-white rounded-xl overflow-hidden shadow-2xl">
+     
+            <iframe src="files/Dinesh Resume.pdf" 
+                    class="w-full h-[80vh]" 
+                    frameborder="0">
+            </iframe>
+        </div>
+        
+    </div>
+</div>
+
+<script>
+
+function openResumePDF() {
+    const modal = document.getElementById('resume-pdf-modal');
+    modal.classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeResumePDF() {
+    const modal = document.getElementById('resume-pdf-modal');
+    modal.classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+
+document.getElementById('resume-pdf-modal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeResumePDF();
+    }
+});
+
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeResumePDF();
+    }
+});
+</script>
+
+                
+                <div class="mt-8">
+                    <div class="flex space-x-4">
+                        
+                        
+                        <a href="https://www.facebook.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        
+                     
+                        <a href="https://x.com/dineshdhami001" target="_blank" class="w-12 h-12 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M18.244 2.25h3.308l-7.228 8.26 8.494 11.24h-6.655l-5.19-6.79-5.93 6.79H1.735l7.74-8.86L1.25 2.25h6.823l4.712 6.217L18.244 2.25zm-1.157 17.52h1.834L7.037 4.488H5.07l12.017 15.282z"/>
+                            </svg>
+                        </a>
+                        
+                      
+                        <a href="https://www.linkedin.com/in/dineshsinghdhami1/" target="_blank" class="w-12 h-12 bg-blue-800 text-white rounded-xl hover:bg-blue-900 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+                            </svg>
+                        </a>
+                        
+                       
+                        <a href="https://github.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-gray-800 text-white rounded-xl hover:bg-gray-900 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                            </svg>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                        
+                
+                        <a href="https://wa.me/9779866109958" target="_blank" class="w-12 h-12 bg-green-500 text-white rounded-xl hover:bg-green-600 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 32 32" class="w-6 h-6">
+                                <path d="M16 .063c-8.837 0-16 7.163-16 16 0 2.837.747 5.605 2.164 8.032l-1.406 
+                                    5.125 5.25-1.375c2.375 1.297 5.07 1.969 7.781 1.969h.006c8.837 0 
+                                    16-7.163 16-16 0-4.27-1.664-8.281-4.687-11.313s-7.043-4.656-11.313-4.656zm0 
+                                    29.344h-.005c-2.422 0-4.797-.641-6.875-1.859l-.492-.289-3.117.816.832-3.031-.32-.5c-1.344-2.125-2.055-4.578-2.055-7.094 
+                                    0-7.234 5.891-13.125 13.133-13.125 3.508 0 6.801 1.367 9.273 
+                                    3.844 2.477 2.477 3.844 5.766 3.844 9.281 0 7.234-5.891 13.125-13.125 
+                                    13.125zm7.188-9.688c-.391-.195-2.328-1.148-2.691-1.281-.363-.133-.629-.195-.895.195s-1.027 
+                                    1.281-1.262 1.547-.465.293-.855.098c-.391-.195-1.648-.609-3.141-1.945-1.164-1.039-1.945-2.32-2.172-2.711s-.023-.605.172-.801c.176-.176.391-.457.586-.684.195-.227.258-.391.391-.652.133-.262.066-.488-.033-.684-.098-.195-.895-2.16-1.227-2.961-.324-.781-.652-.676-.895-.688-.23-.012-.492-.012-.754-.012s-.684.098-1.043.488c-.359.391-1.367 
+                                    1.336-1.367 3.262s1.398 3.781 1.594 4.043c.195.262 2.75 4.195 6.664 
+                                    5.883.934.402 1.66.641 2.227.82.934.297 1.785.254 2.457.156.75-.113 
+                                    2.328-.949 2.656-1.863.328-.91.328-1.691.23-1.863-.098-.172-.359-.277-.75-.473z"/>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                </div>
+            </div>
+            
+        
+            <div class="text-center lg:text-right fade-in lg:order-2 relative">
+                <div class="relative inline-block">
+                    <div class="text-center">
+                        <img src="files/unnamed-300x300.jpg" class="w-130 lg:w-[500px] h-auto mx-auto rounded-xl">
+
+                        <div class="text-center">
+                            <h2 class="mt-4 font-extrabold bg-gradient-to-r from-[#DC143C] to-[#1E3A8A] text-transparent bg-clip-text drop-shadow-[0_0_10px_rgba(30,58,138,0.8)] flex items-center justify-center" style="font-size: 25px;">"दिनेश सिंह धामी"</h2>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="about" class="section-padding min-h-screen flex items-center justify-center about-bg">
+    <div class="w-full px-8 lg:px-12 py-20">
+
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 fade-in">ABOUT ME</h2>
+           <p class="text-xl text-gray-600 max-w-3xl mx-auto fade-in">
+                An overview of my learning, skills, and interests
+            </p>
+        </div>
+
+       
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        
+            <div class="fade-in flex justify-center">
+                <div class="relative group">
+                    <div class="w-72 h-72 sm:w-96 sm:h-96 rounded-2xl overflow-hidden shadow-2xl border-4 border-transparent bg-gradient-to-br from-blue-500 to-purple-600 p-1 transition-all duration-500 group-hover:scale-105 group-hover:shadow-[0_0_25px_rgba(59,130,246,0.8)]">
+
+                  
+                        <img src="files/2ndone.png" alt="About Me"
+                            class="w-full h-full object-cover rounded-xl transition-transform duration-500 group-hover:scale-110">
+
+                    </div>
+
+                    <div class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-40 bg-gradient-to-br from-purple-500 to-blue-500 blur-xl transition-opacity"></div>
+                </div>
+            </div>
+
+            <div class="fade-in">
+               
+
+                <p class="text-gray-600 mb-7 text-lg leading-relaxed">
+                    I’m a Computer Engineering student beginning my journey in programming and technology. I’m learning the fundamentals of coding, data structures, algorithms, and web development—growing a little more each day.</p>
+
+                <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    My curiosity about how websites and apps work motivated me to start building small projects and exploring new tools to strengthen my skills.</p>
+
+                 <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                    I’m currently learning full-stack development and enjoy creating beginner projects that help me learn, make mistakes, and improve at my own pace.
+</p>
+               
+                <div class="flex flex-wrap gap-3 mb-8">
+                    <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-full text-sm font-medium">Curious Learner</span>
+                    <span class="bg-indigo-100 text-indigo-800 px-4 py-2 rounded-full text-sm font-medium">Coding Newbie</span>
+                    <span class="bg-purple-100 text-purple-800 px-4 py-2 rounded-full text-sm font-medium">Continuous Learner</span>
+                    <span class="bg-green-100 text-green-800 px-4 py-2 rounded-full text-sm font-medium">Innovation Focused</span>
+                </div>
+
+                <div class="mb-6">
+                    <h5 class="text-md font-medium text-green-700 mb-3">Bachelor's Degree (BE Computer)</h5>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-green-600 mb-1">2022-2026</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Batch</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-red-600 mb-1">NAST</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">college</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-blue-600 mb-1">BE Computer</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Course</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-xl sm:text-2xl font-bold text-purple-600 mb-1">**</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">CGPA</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-yellow-600 mb-1">Dhangadhi</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Location</div>
+                        </div>
+                    </div>
+                </div>
+
+          
+                <div>
+                    <h5 class="text-md font-medium text-green-700 mb-3">12th Grade (+2 Science)</h5>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-green-600 mb-1">2020-2022</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Batch</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-red-600 mb-1">AVN</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">College</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-blue-600 mb-1">+2 Science</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Stream</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-xl sm:text-2xl font-bold text-purple-600 mb-1">2.97</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">GPA</div>
+                        </div>
+
+                        <div class="text-center p-3 bg-white rounded-xl shadow-sm">
+                            <div class="text-md sm:text-lg font-bold text-yellow-600 mb-1">Dhangadhi</div>
+                            <div class="text-gray-600 text-xs sm:text-sm">Location</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="projects" class="section-padding py-20 projects-bg">
+    <div class="w-full px-8 lg:px-12">
+    
+        <div class="text-center mb-16">
+            <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 fade-in">PROJECTS</h2>
+            <p class="text-xl text-gray-600 fade-in">Showcasing my technical skills through impactful real-world solutions</p>
+        </div>
+
+      
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            
+
+            
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                <div class="h-48 overflow-hidden">
+                    <img src="files/quizzer.png" alt="Quizzer" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center">
+                Quizzer
+                <span class="verified-badge ml-1 flex-shrink-0"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+                        <path fill="none" stroke="#fff" stroke-width="2.5" d="M7 12l4 4 6-6"/>
+                    </svg>
+                </span>
+            </h3>
+        <p class="text-gray-600 mb-4">A responsive quiz web application built using Flask, HTML, CSS, JavaScript.</p>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Flask</span>
+            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">HTML</span>
+            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">JavaScript</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">CSS</span>
+        </div>
+
+        <div class="flex space-x-3 mb-4">
+            <a href="https://quizzerhub.pythonanywhere.com/" target="_blank">
+                <button class="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                    Live Demo
+                </button>
+            </a>
+            <a href="https://github.com/dineshsinghdhami/quizzer" target="_blank">
+                <button class="text-gray-600 hover:text-gray-800 font-medium transition-colors">
+                    GitHub
+                </button>
+            </a>
+        </div>
+
+       
+        <a href="https://quizzerhub.pythonanywhere.com/" target="_blank">
+            <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                Live Preview
+            </button>
+        </a>
+
+    </div>
+</div>
+
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                <div class="h-48 overflow-hidden">
+                    <img src="files/dhamistore.jpg" alt="Quizzer" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center">
+                Dhami Store
+                <span class="verified-badge ml-1 flex-shrink-0">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+                        <path fill="none" stroke="#fff" stroke-width="2.5" d="M7 12l4 4 6-6"/>
+                    </svg>
+                </span>
+            </h3>
+        <p class="text-gray-600 mb-4">A responsive ecommerce website built using Django, HTML, CSS, JavaScript.</p>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">Django</span>
+            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">HTML</span>
+            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">JavaScript</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">CSS</span>
+        </div>
+
+        <div class="flex space-x-3 mb-4">
+            <a href="#" target="_blank">
+                <button class="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                    Live Demo
+                </button>
+            </a>
+            <a href="https://github.com/dineshsinghdhami" target="_blank">
+                <button class="text-gray-600 hover:text-gray-800 font-medium transition-colors">
+                    GitHub
+                </button>
+            </a>
+        </div>
+
+    
+        <a href="#" target="_blank">
+            <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                In Development
+            </button>
+        </a>
+
+    </div>
+</div>
+
+            <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+                <div class="h-48 overflow-hidden">
+                    <img src="files/unnamed.jpg" alt="Portfolio" class="w-full h-full object-cover">
+                </div>
+                <div class="p-6">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2 flex items-center">
+                Portfolio Website
+                <span class="verified-badge ml-1 flex-shrink-0"> 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="12" fill="#1877F2"/>
+                        <path fill="none" stroke="#fff" stroke-width="2.5" d="M7 12l4 4 6-6"/>
+                    </svg>
+                </span>
+            </h3>
+        <p class="text-gray-600 mb-4">A responsive portfolio website showcasing my work.</p>
+
+        <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-orange-100 text-orange-800 px-2 py-1 rounded text-xs">HTML</span>
+            <span class="bg-yellow-100 text-yellow-800 px-2 py-1 rounded text-xs">JavaScript</span>
+            <span class="bg-blue-100 text-blue-800 px-2 py-1 rounded text-xs">CSS</span>
+        </div>
+
+        <div class="flex space-x-3 mb-4">
+            <a href="#" target="_blank">
+                <button class="text-blue-600 hover:text-blue-800 font-medium transition-colors">
+                    Live Demo
+                </button>
+            </a>
+            <a href="https://github.com/dineshsinghdhami" target="_blank">
+                <button class="text-gray-600 hover:text-gray-800 font-medium transition-colors">
+                    GitHub
+                </button>
+            </a>
+        </div>
+
+     
+        <a href="https://dineshsinghdhami.com.np/" target="_blank">
+            <button class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium">
+                Live Preview
+            </button>
+        </a>
+
+    </div>
+</div>
+
+
+
+
+            
+        </div>
+    </div>
+</section>
+
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-90 flex items-center justify-center hidden z-50 p-2 md:p-5">
+  <div class="relative w-full h-full flex items-center justify-center">
+    <div class="bg-white rounded-xl overflow-hidden max-w-full max-h-[90vh] mx-2">
+      <img id="lightbox-img" src="" class="w-full h-auto max-h-[80vh] object-contain">
+    </div>
+    
+  
+    <button onclick="closeLightbox()" 
+            class="absolute top-4 right-4 md:top-[-10px] md:right-[-10px] 
+                   text-white text-3xl font-bold bg-black bg-opacity-70 
+                   rounded-full w-12 h-12 md:w-8 md:h-8 
+                   flex items-center justify-center hover:bg-opacity-100 
+                   transition-all z-10">
+        &times;
+    </button>
+    
+  </div>
+</div>
+
+
+<section id="certifications" class="section-padding py-20 bg-gray-50">
+  <div class="w-full px-8 lg:px-12">
+   
+    <div class="text-center mb-16">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 fade-in">MY CERTIFICATIONS</h2>
+      <p class="text-xl text-gray-600 fade-in">A showcase of my earned certificates</p>
+    </div>
+
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+
+    
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+        <img src="files/gitandgithubcertificate.png" alt="Git & GitHub Certificate" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Git & GitHub Workshop</h3>
+          <p class="text-sm text-gray-600 mb-1">Issued by: NAST IT CLUB</p>
+          <p class="text-sm text-gray-500 mb-3">Year: 2025</p>
+          <button onclick="openLightbox('files/gitandgithubcertificate.png')" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+    
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+        <img src="files/Git training certificate.jpg" alt="Git Training Certificate" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Git Training Certificate</h3>
+          <p class="text-sm text-gray-600 mb-1">Issued by: Simplilearn</p>
+          <p class="text-sm text-gray-500 mb-3">Year: 2025</p>
+          <button onclick="openLightbox('files/Git training certificate.jpg')" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+        <img src="files/htmlcertificate.png" alt="HTML Skill Test Certificate" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Skill Test Certificate (HTML)</h3>
+          <p class="text-sm text-gray-600 mb-1">Issued by: Dilwado</p>
+          <p class="text-sm text-gray-500 mb-3">Year: 2025</p>
+          <button onclick="openLightbox('files/htmlcertificate.png')" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+  
+      <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
+        <img src="files/basicaicertificate.jpg" alt="Basic AI Course" class="w-full h-64 object-cover">
+        <div class="p-4">
+          <h3 class="text-lg font-semibold text-gray-800 mb-1">Basic AI Course</h3>
+          <p class="text-sm text-gray-600 mb-1">Issued by: Technology Channel</p>
+          <p class="text-sm text-gray-500 mb-3">Year: 2025</p>
+          <button onclick="openLightbox('files/basicaicertificate.jpg')" class="w-full bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors font-medium text-sm">
+            View Certificate
+          </button>
+        </div>
+      </div>
+
+      
+
+    </div>
+  </div>
+</section>
+
+<div id="lightboxModal" class="fixed inset-0 bg-black bg-opacity-90 z-50 hidden items-center justify-center p-4">
+ 
+  <button id="closeLightbox" class="fixed top-4 right-4 text-white hover:text-gray-300 transition-colors z-50 bg-black bg-opacity-70 rounded-full p-3">
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+    </svg>
+    <span class="sr-only">Close</span>
+  </button>
+  
+  <div class="relative max-w-4xl w-full">
+  
+    <div class="bg-white rounded-lg overflow-hidden shadow-2xl">
+      <img id="lightboxImage" src="" alt="Certificate" class="w-full h-auto max-h-[80vh] object-contain">
+      <div class="p-4 bg-white text-center">
+        <p id="lightboxCaption" class="text-gray-700 font-medium"></p>
+      </div>
+    </div>
+    
+  
+    <div class="text-center mt-4">
+      <p class="text-white text-sm opacity-80">Tap outside the certificate to close</p>
+    </div>
+  </div>
+</div>
+
+<div id="lightbox" class="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center hidden z-50 p-5">
+  <div class="relative">
+    <img id="lightbox-img" src="" class="max-w-2xl max-h-[85vh] rounded-lg shadow-lg cursor-pointer transition-transform duration-300">
+    <button onclick="closeLightbox()" class="absolute top-[-10px] right-[-10px] text-white text-2xl font-bold bg-black bg-opacity-50 rounded-full w-8 h-8 flex items-center justify-center">&times;</button>
+  </div>
+</div>
+
+<section id="skills" class="py-20 bg-gray-50">
+  <div class="w-full px-8 lg:px-12">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4">SKILLS</h2>
+      <p class="text-xl text-gray-600">Core technical skills</p>
+      
+    </div>
+
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mt-12">
+
+
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">HTML</h3>
+      </div>
+
+    
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="CSS" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">CSS</h3>
+      </div>
+
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">JavaScript</h3>
+      </div>
+
+     
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">Python</h3>
+      </div>
+
+    
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/75/Django_logo.svg" alt="Django" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">Django</h3>
+      </div>
+
+ 
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Flask_logo.svg" alt="Flask" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">Flask</h3>
+      </div>
+
+ 
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e0/Git-logo.svg" alt="Git" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">Git & GitHub</h3>
+      </div>
+
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/MySQL_textlogo.svg" alt="MySQL" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">MySQL</h3>
+      </div>
+
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/38/SQLite370.svg" alt="SQLite" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">SQLite</h3>
+      </div>
+
+   
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png" alt="C" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">C</h3>
+      </div>
+
+     
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg" alt="C++" class="w-12 h-12 mb-2 object-contain">
+        <h3 class="text-md font-semibold text-gray-800">C++</h3>
+      </div>
+
+      
+   
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/2/21/Matlab_Logo.png" alt="MATLAB" class="w-12 h-12 mb-2 icon-black">
+        <h3 class="text-md font-semibold text-gray-800">MATLAB</h3>
+      </div>
+
+    
+      <div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg" alt="Adobe Photoshop" class="w-12 h-12 mb-2 icon-black">
+        <h3 class="text-md font-semibold text-gray-800">Adobe Photoshop</h3>
+      </div>
+
+  
+<div class="flex flex-col items-center bg-white p-6 rounded-2xl shadow-lg hover:scale-105 transform transition">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="PHP" class="w-12 h-12 mb-2 icon-black">
+  <h3 class="text-md font-semibold text-gray-800">PHP</h3>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+    <section id="contact" class="section-padding py-20 contact-bg">
+        <div class="w-full px-8 lg:px-12">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl sm:text-4xl font-bold text-gray-800 mb-4 fade-in">GET IN TOUCH</h2>
+                <p class="text-xl text-gray-600 fade-in">Let's connect and discuss opportunities or collaborations!</p>
+            </div>
+            
+                <div class="grid md:grid-cols-2 gap-12">
+               
+                <div class="fade-in">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-8">Contact Information</h3>
+                    <div class="space-y-6">
+                    
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center text-2xl">
+                                📧
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-medium">Email</p>
+                                <p class="text-gray-800 font-semibold">dineshdhamidn@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                     
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl">
+                                📱
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-medium">Phone</p>
+                                <p class="text-gray-800 font-semibold">+977 9866109958</p>
+                            </div>
+                        </div>
+              
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm cursor-pointer hover:bg-green-50 transition-colors" onclick="openWhatsApp()">
+                            <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center text-2xl">
+                                💬
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-medium">WhatsApp</p>
+                                <p class="text-gray-800 font-semibold">+977 9866109958</p>
+                                <p class="text-green-600 text-xs">Click to chat directly</p>
+                            </div>
+                        </div>
+                  
+                        <div class="flex items-center space-x-4 p-4 bg-white rounded-xl shadow-sm">
+                            <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center text-2xl">
+                                📍
+                            </div>
+                            <div>
+                                <p class="text-gray-600 font-medium">Location</p>
+                                <p class="text-gray-800 font-semibold">Dhangadhi, Nepal</p>
+                            </div>
+                        </div>
+                    </div>
+               
+                    <div class="mt-8">
+                        <h4 class="text-lg font-semibold text-gray-800 mb-4">Connect With Me</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-blue-600 text-white rounded-xl hover:bg-blue-700 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="https://x.com/dineshdhami001" target="_blank" class="w-12 h-12 bg-black text-white rounded-xl hover:bg-gray-800 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.244 2.25h3.308l-7.228 8.26 8.494 11.24h-6.655l-5.19-6.79-5.93 6.79H1.735l7.74-8.86L1.25 2.25h6.823l4.712 6.217L18.244 2.25zm-1.157 17.52h1.834L7.037 4.488H5.07l12.017 15.282z"/>
+                                </svg>
+                            </a>
+
+                            </a>
+                            <a href="https://www.linkedin.com/in/dineshsinghdhami1/" target="_blank" class="w-12 h-12 bg-blue-800 text-white rounded-xl hover:bg-blue-900 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                                </svg>
+                            </a>
+                            <a href="https://github.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-gray-800 text-white rounded-xl hover:bg-gray-900 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                            </a>
+                            <a href="https://www.instagram.com/dineshsinghdhami" target="_blank" class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-xl hover:from-purple-600 hover:to-pink-600 transition-colors shadow-lg flex items-center justify-center hover:scale-110 transform transition-transform">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+
+<section class="py-12 bg-gray-50">
+  <div class="max-w-xl mx-auto px-4">
+    <div class="bg-white p-8 rounded-2xl shadow-lg">
+      <form id="contact-form" action="#" method="post" class="space-y-6">
+        
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Full Name</label>
+          <input type="text" name="name" placeholder="Full Name" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Email Address</label>
+          <input type="email" name="email" placeholder="Email Address" required
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all">
+        </div>
+
+        <div>
+          <label class="block text-gray-700 font-semibold mb-2">Message</label>
+          <textarea name="message" rows="5" placeholder="Your Message..." required
+            class="w-full px-4 py-3 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-500 focus:outline-none transition-all"></textarea>
+        </div>
+
+        <button type="submit"
+          class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 rounded-xl transition-colors">
+          Send Message
+        </button>
+
+        <div class="text-center pt-4 border-t border-gray-200">
+          <p class="text-gray-600 text-sm mb-3">Or contact me directly:</p>
+          <div class="flex justify-center space-x-4">
+            <button type="button" onclick="openDirectEmail()"
+              class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg hover:bg-blue-200 transition-colors text-sm font-medium flex items-center space-x-2">
+              <span>📧</span>
+              <span>Email</span>
+            </button>
+            <button type="button" onclick="openWhatsApp()"
+              class="bg-green-100 text-green-800 px-4 py-2 rounded-lg hover:bg-green-200 transition-colors text-sm font-medium flex items-center space-x-2">
+              <span>💬</span>
+              <span>WhatsApp</span>
+            </button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div> 
+</section> 
+
+<footer class="bg-blue-900 text-white py-4">
+    <div class="w-full px-3 lg:px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+            
+           
+            <div class="mb-2 md:mb-0 text-center md:text-left">
+                <div class="flex items-center justify-center md:justify-start space-x-1.5 mb-0.5">
+                    <img src="files/icon.ico" alt="Logo" class="w-5 h-5 rounded-full">
+                    <span class="text-base font-bold">DINESH SINGH DHAMI  </span>
+                </div>
+                <p class="text-blue-200 text-xs mt-1">
+                    © 2025 All Rights Reserved.
+                </p>
+            </div>  
+            
+ 
+            <div class="mt-2 md:mt-0">
+                <div class="flex space-x-2 justify-center md:justify-start">
+             
+                    <a href="https://www.linkedin.com/in/dineshsinghdhami1/" target="_blank" 
+                       class="w-7 h-7 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center transition-colors shadow-sm">
+                        <svg class="w-4 h-4" fill="white" viewBox="0 0 24 24">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/>
+                        </svg>
+                    </a>
+                    
+              
+                    <a href="https://github.com/dineshsinghdhami" target="_blank" 
+                       class="w-7 h-7 bg-gray-800 hover:bg-gray-900 rounded-full flex items-center justify-center transition-colors shadow-sm">
+                        <svg class="w-4 h-4" fill="white" viewBox="0 0 24 24">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    
+              
+                    <a href="https://x.com/dineshdhami001" target="_blank" 
+                       class="w-7 h-7 bg-black hover:bg-gray-800 rounded-full flex items-center justify-center transition-colors shadow-sm">
+                        <svg class="w-3.5 h-3.5" fill="white" viewBox="0 0 24 24">
+                            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l5.205 6.885L18.244 2.25zm-1.342 18.12h2.116L7.084 4.126H5.117L16.902 20.37z"/>
+                        </svg>
+                    </a>
+                    
+
+                    <a href="mailto:dineshdhamidn@gmail.com?subject=Contact%20from%20Portfolio%20Website&body=Hi%20Dinesh,%20I%20found%20your%20portfolio%20website%20and%20would%20like%20to%20connect%20with%20you." 
+                    target="_blank"
+                    class="w-7 h-7 bg-red-600 hover:bg-red-700 rounded-full flex items-center justify-center transition-colors shadow-sm">
+                    <svg class="w-4 h-4" fill="white" viewBox="0 0 20 20">
+                        <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                    </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
