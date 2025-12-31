@@ -365,3 +365,87 @@ lightbox.addEventListener('click', function(e) {
         mobileBtn.addEventListener("click", () => {
             mobileMenu.classList.toggle("hidden");
         });
+
+     
+const themeToggle = document.getElementById('theme-toggle');
+const mobileThemeToggle = document.getElementById('mobile-theme-toggle');
+const themeIconLight = document.getElementById('theme-icon-light');
+const themeIconDark = document.getElementById('theme-icon-dark');
+const mobileThemeIconLight = document.getElementById('mobile-theme-icon-light');
+const mobileThemeIconDark = document.getElementById('mobile-theme-icon-dark');
+const themeToggleText = document.getElementById('theme-toggle-text');
+
+
+function getThemePreference() {
+    const savedTheme = localStorage.getItem('theme');
+    
+    if (savedTheme) {
+        return savedTheme;
+    }
+
+    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+    }
+    
+    return 'light';
+}
+
+
+function applyTheme(theme) {
+    if (theme === 'dark') {
+        document.documentElement.classList.add('dark-mode');
+        if (themeIconLight) themeIconLight.classList.add('hidden');
+        if (themeIconDark) themeIconDark.classList.remove('hidden');
+        if (mobileThemeIconLight) mobileThemeIconLight.classList.add('hidden');
+        if (mobileThemeIconDark) mobileThemeIconDark.classList.remove('hidden');
+        if (themeToggleText) {
+            themeToggleText.textContent = 'Light Mode';
+        }
+    } else {
+        document.documentElement.classList.remove('dark-mode');
+        if (themeIconLight) themeIconLight.classList.remove('hidden');
+        if (themeIconDark) themeIconDark.classList.add('hidden');
+        if (mobileThemeIconLight) mobileThemeIconLight.classList.remove('hidden');
+        if (mobileThemeIconDark) mobileThemeIconDark.classList.add('hidden');
+        if (themeToggleText) {
+            themeToggleText.textContent = 'Dark Mode';
+        }
+    }
+}
+
+// Toggle theme
+function toggleTheme() {
+    const currentTheme = document.documentElement.classList.contains('dark-mode') ? 'dark' : 'light';
+    const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+    
+    applyTheme(newTheme);
+    localStorage.setItem('theme', newTheme);
+}
+
+
+const preferredTheme = getThemePreference();       // Initialize theme
+applyTheme(preferredTheme);
+
+
+if (themeToggle) {
+    themeToggle.addEventListener('click', toggleTheme);
+}
+
+if (mobileThemeToggle) {
+    mobileThemeToggle.addEventListener('click', () => {
+        toggleTheme();
+       
+        const mobileMenu = document.getElementById('mobile-menu');
+        if (mobileMenu) {
+            mobileMenu.classList.add('hidden');
+        }
+    });
+}
+
+window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', (e) => {
+    
+    if (!localStorage.getItem('theme')) {
+        const newTheme = e.matches ? 'dark' : 'light';
+        applyTheme(newTheme);
+    }
+});
