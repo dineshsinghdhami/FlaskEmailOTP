@@ -22,46 +22,64 @@
 
 
     <nav class="fixed top-0 w-full navbar-blur z-40">
-        <div class="w-full px-8 lg:px-12">
-            <div class="flex justify-between items-center py-4">
+    <div class="w-full px-8 lg:px-12">
+        <div class="flex justify-between items-center py-4">
 
-              
-                <div class="flex items-center">
-                    <img src="files/icon.png" alt="Profile" class="profile-image cursor-pointer hover:scale-110 transition-transform shadow-lg" id="profile-trigger">
-                </div>
+           
+            <div class="flex items-center">
+                <img src="files/icon.png" alt="Profile" class="profile-image cursor-pointer hover:scale-110 transition-transform shadow-lg" id="profile-trigger">
+            </div>
 
-        
-                <div class="hidden md:flex space-x-10">
-                    <a href="#home" class="text-link">HOME</a>
-                    <a href="#about" class="text-link">ABOUT</a>
-                    <a href="#projects" class="text-link">PROJECTS</a>
-                    <a href="#certifications" class="text-link">CERTIFICATIONS</a>
-                    <a href="#skills" class="text-link">SKILLS</a>
-                  
-                    <a href="#contact" class="text-link">CONTACT</a>
-                </div>
-
-                <button id="mobile-menu-btn" class="md:hidden text-white p-2">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+     
+            <div class="hidden md:flex space-x-10">
+                <a href="#home" class="text-link">HOME</a>
+                <a href="#about" class="text-link">ABOUT</a>
+                <a href="#projects" class="text-link">PROJECTS</a>
+                <a href="#certifications" class="text-link">CERTIFICATIONS</a>
+                <a href="#skills" class="text-link">SKILLS</a>
+                <a href="#contact" class="text-link">CONTACT</a>
+           
+                <button id="theme-toggle" class="text-link flex items-center">
+                    <svg id="theme-icon-light" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-icon-dark" class="w-5 h-5 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
                     </svg>
                 </button>
-
             </div>
-        </div>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-blue-900/95 backdrop-blur-md border-t border-white/10">
-            <div class="px-4 py-3 space-y-3">
-                <a href="#home" class="block text-link py-2">HOME</a>
-                <a href="#about" class="block text-link py-2">ABOUT</a>
-                <a href="#projects" class="block text-link py-2">PROJECTS</a>
-                <a href="#certifications" class="block text-link py-2">CERTIFICATIONS</a>
-                <a href="#skills" class="block text-link py-2">SKILLS</a>
-                
-                <a href="#contact" class="block text-link py-2">CONTACT</a>
-            </div>
+            <button id="mobile-menu-btn" class="md:hidden text-white p-2">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+            </button>
+
         </div>
-    </nav>
+    </div>
+
+
+    <div id="mobile-menu" class="hidden md:hidden bg-blue-900/95 backdrop-blur-md border-t border-white/10">
+        <div class="px-4 py-3 space-y-3">
+            <a href="#home" class="block text-link py-2">HOME</a>
+            <a href="#about" class="block text-link py-2">ABOUT</a>
+            <a href="#projects" class="block text-link py-2">PROJECTS</a>
+            <a href="#certifications" class="block text-link py-2">CERTIFICATIONS</a>
+            <a href="#skills" class="block text-link py-2">SKILLS</a>
+            <a href="#contact" class="block text-link py-2">CONTACT</a>
+          
+            <button id="mobile-theme-toggle" class="block w-full text-left text-link py-2 flex items-center">
+                <svg id="mobile-theme-icon-light" class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                </svg>
+                <svg id="mobile-theme-icon-dark" class="w-5 h-5 mr-2 hidden" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z" clip-rule="evenodd"></path>
+                </svg>
+                <span id="theme-toggle-text">Toggle Theme</span>
+            </button>
+        </div>
+    </div>
+</nav>
 
     <div class="profile-popup" id="profile-popup">
         <div class="profile-content">
@@ -495,7 +513,6 @@ document.addEventListener('keydown', function(e) {
 
     </div>
 </div>
-
 
 <div class="bg-white rounded-2xl shadow-lg overflow-hidden card-hover fade-in">
                 <div class="h-48 overflow-hidden">
@@ -1005,6 +1022,3 @@ document.addEventListener('keydown', function(e) {
 <script src="script.js"></script>
 </body>
 </html>
-
-
-
